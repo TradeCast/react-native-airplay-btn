@@ -5,11 +5,13 @@ Pod::Spec.new do |s|
   s.name          = package['name']
   s.version       = package['version']
   s.summary       = package['description']
+  s.author        = 'Nadia Dillon'
 
   s.homepage      = 'https://github.com/tradecast/react-native-airplay-btn'
   s.license       = package['license']
   s.platform      = :ios, '9.0'
 
+  s.source = { :git => 'https://github.com/TradeCast/react-native-airplay-btn.git', :tag => s.version.to_s }
   s.source_files  = 'RNAirplay/**/*.{h,m}'
 
   s.dependency      'React'
